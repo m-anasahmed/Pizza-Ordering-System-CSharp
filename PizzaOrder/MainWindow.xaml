@@ -1,0 +1,53 @@
+﻿<Window x:Class="PizzaOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="496.3" Width="839"
+        WindowStartupLocation="CenterScreen">
+    <Grid RenderTransformOrigin="0,1">
+
+        <Image HorizontalAlignment="Left" Height="466" VerticalAlignment="Center" Width="841" Source="/adea9qoi.png" Margin="233,0,0,0"/>
+
+        <DockPanel HorizontalAlignment="Left" Height="481" LastChildFill="False" VerticalAlignment="Center" Width="257" Background="#FFCB421C"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="29" Margin="378,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" FontSize="18" FontFamily="Arial Narrow" TextChanged="textBox1_TextChanged"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="28" Margin="378,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" FontSize="18" FontFamily="Arial Narrow"/>
+        <Label Content="USER ID :" HorizontalAlignment="Left" Height="46" Margin="373,224,0,0" VerticalAlignment="Top" Width="135" Foreground="White" FontSize="24" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="PASSWORD :" HorizontalAlignment="Left" Height="47" Margin="378,285,0,0" VerticalAlignment="Top" Width="150" Foreground="#FFFFFFE1" FontFamily="Arial Black" FontSize="22" FontWeight="Bold" BorderBrush="Black"/>
+        <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Height="32" Margin="445,363,0,0" VerticalAlignment="Top" Width="99" Background="#FFCB421C" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="20" Click="button1_Click"/>
+        <Image Margin="262,28,281,260" Source="/OIP__1_-removebg-preview.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="215" Width="251" FontWeight="Bold" FontFamily="Arial Black" FontSize="60" RenderTransformOrigin="0.822,0.529" TextDecorations="Underline" Text="YUMM YUMM PIZZA">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="#FFFFFFE1" Opacity="0.7"/>
+            </TextBlock.Foreground>
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="21,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="251" Foreground="#FF2E1B16" FontWeight="Bold" FontFamily="Arial Black" FontSize="60" RenderTransformOrigin="0.822,0.529" TextDecorations="Underline" Text="YUMM YUMM PIZZA">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background></TextBlock>
+        <Image Margin="-5,186,582,23" Source="/OIP-removebg-preview (2).png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="558,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="215" Width="250" FontWeight="Bold" FontFamily="Arial Black" FontSize="60" RenderTransformOrigin="0.822,0.529" TextDecorations="Underline" Text="ORDER YOUR PIZZA">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="#FFFFFFE1" Opacity="1"/>
+            </TextBlock.Foreground>
+            <TextBlock.OpacityMask>
+                <SolidColorBrush Color="White" Opacity="1"/>
+            </TextBlock.OpacityMask>
+            <TextBlock.Background>
+                <ImageBrush Stretch="None"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="563,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="251" Foreground="#FF892C12" FontWeight="Bold" FontFamily="Arial Black" FontSize="60" RenderTransformOrigin="0.822,0.529" TextDecorations="Underline" Text="ORDER YOUR PIZZA">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background></TextBlock>
+        <Label Content="USER ID :" HorizontalAlignment="Left" Height="47" Margin="378,224,0,0" VerticalAlignment="Top" Width="134" Foreground="Black" FontSize="24" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Button x:Name="closebutton1" Content="Close" HorizontalAlignment="Left" Height="29" Margin="460,400,0,0" VerticalAlignment="Top" Width="69" Background="#FFCB421C" Foreground="White" FontFamily="Trebuchet MS" FontSize="14" IsCancel="True" Click="closebutton1_Click"/>
+        <Label Content="PASSWORD :" HorizontalAlignment="Left" Height="47" Margin="383,285,0,0" VerticalAlignment="Top" Width="150" Foreground="Black" FontFamily="Arial Black" FontSize="22" FontWeight="Bold" BorderBrush="Black"/>
+
+    </Grid>
+</Window>

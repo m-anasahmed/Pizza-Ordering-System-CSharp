@@ -1,0 +1,49 @@
+﻿<Window x:Class="PizzaOrder.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrder"
+        mc:Ignorable="d"
+        Title="Window2" Height="496.3" Width="839"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="637*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Margin="102,2,0,0" Source="/adea9qoi.png" Stretch="Fill" Opacity="0.4" Grid.ColumnSpan="2"/>
+
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="102" Background="#FFCB421C"/>
+        <StackPanel HorizontalAlignment="Left" Height="222" Margin="141,71,0,0" VerticalAlignment="Top" Width="273">
+            <Border BorderBrush="Black" BorderThickness="1" Height="222" Width="272" Background="#FFF7D5D5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Label Content="Please select a Pizza :" HorizontalAlignment="Left" Height="38" Margin="160,86,0,0" VerticalAlignment="Top" Width="236" Foreground="#FFCB421C" FontSize="20" FontFamily="Trebuchet MS" FontWeight="Bold"/>
+        <RadioButton x:Name="radiobutton1" Content="Small" HorizontalAlignment="Left" Height="32" Margin="160,134,0,0" VerticalAlignment="Top" Width="132" FontSize="18" BorderThickness="3,3,3,3" Panel.ZIndex="1" Padding="4,-3,0,0"/>
+        <RadioButton x:Name="radiobutton4" Content="Extra Large" HorizontalAlignment="Left" Height="34" Margin="160,251,0,0" VerticalAlignment="Top" Width="132" FontSize="18" BorderThickness="3,3,3,3" Padding="4,-4,0,0"/>
+        <RadioButton x:Name="radiobutton3" Content="Large" HorizontalAlignment="Left" Height="34" Margin="160,212,0,0" VerticalAlignment="Top" Width="132" FontSize="18" BorderThickness="3,3,3,3" Padding="4,-4,0,0"/>
+        <RadioButton x:Name="radiobutton2" Content="Medium" HorizontalAlignment="Left" Height="34" Margin="160,173,0,0" VerticalAlignment="Top" Width="132" FontSize="18" BorderThickness="3,3,3,3" Padding="4,-4,0,0"/>
+        <DataGrid x:Name="Datagrid1" HorizontalAlignment="Left" Height="294" Margin="470,62,0,0" VerticalAlignment="Top" Width="316" d:ItemsSource="{d:SampleData ItemCount=5}" SelectedIndex="0" SelectionChanged="DataGrid_SelectionChanged_3" Background="#FFF7D5D5" Grid.ColumnSpan="2">
+            <DataGrid.RowHeaderTemplateSelector>
+                <DataTemplateSelector/>
+            </DataGrid.RowHeaderTemplateSelector>
+            <DataGrid.RowHeaderStyle>
+                <Style/>
+            </DataGrid.RowHeaderStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style/>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="29" Margin="278,298,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="74" FontSize="15" FontFamily="Trebuchet MS"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Height="29" Margin="178,298,0,0" VerticalAlignment="Top" Width="100" FontFamily="Trebuchet MS" FontSize="18"/>
+        <Label x:Name="Grandtotal" Content="Grand Total" HorizontalAlignment="Left" Height="29" Margin="539,361,0,0" VerticalAlignment="Top" Width="133" FontFamily="Trebuchet MS" FontSize="20" Foreground="#FF3549CB" FontWeight="Bold" RenderTransformOrigin="1.352,0.974" FontStyle="Italic" Grid.ColumnSpan="2"/>
+        <Button x:Name="button3" Content="Set the prices " HorizontalAlignment="Left" Height="42" Margin="122,408,0,0" VerticalAlignment="Top" Width="124" FontFamily="Trebuchet MS" Background="#FFE6CD29" Click="Button_Click" FontSize="16"/>
+        <Button Content="Add to Cart" HorizontalAlignment="Left" Height="40" Margin="192,330,0,0" VerticalAlignment="Top" Width="123" Background="#FFCB421C" Foreground="White" FontSize="18" FontFamily="Trebuchet MS" Click="Button_Click_1"/>
+        <Button x:Name="button786" Content="Proceed to checkout" HorizontalAlignment="Left" Height="34" Margin="506,406,0,0" VerticalAlignment="Top" Width="200" Background="#FFCB421C" Foreground="White" FontSize="18" FontFamily="Trebuchet MS" Click="button786_Click" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label Content="PIZZA ORDER MANAGEMENT SYSTEM " HorizontalAlignment="Left" Height="47" Margin="121,10,0,0" VerticalAlignment="Top" Width="514" Foreground="#FFFFFFE1" FontSize="24" FontFamily="Arial Black" FontWeight="Bold" OpacityMask="Black"/>
+        <Label Content="PIZZA ORDER MANAGEMENT SYSTEM " HorizontalAlignment="Left" Height="46" Margin="122,11,0,0" VerticalAlignment="Top" Width="514" Foreground="#FFCB421C" FontSize="24" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Button x:Name="logoutbutton1" Content="Logout" HorizontalAlignment="Center" Height="24" Margin="0,20,0,0" VerticalAlignment="Top" Width="88" Background="#FFCB421C" Foreground="White" FontFamily="Trebuchet MS" FontSize="14" Click="logoutbutton1_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
