@@ -68,7 +68,7 @@ namespace PizzaOrder
         private string ConStr;
         public Function()
         {
-            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\CodeBase\Sem-02-Project\Pizza-Ordering-System-CSharp\PizzaOrder\Database.mdf;Integrated Security=True";
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\01CodeBase\Sem-02-Project\Pizza-Ordering-System-CSharp\PizzaOrder\Database.mdf;Integrated Security=True";
             Con = new SqlConnection(ConStr);
             cmd = new SqlCommand();
             cmd.Connection = Con;
